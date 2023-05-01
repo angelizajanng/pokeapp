@@ -1,0 +1,71 @@
+
+
+
+// cards pokemon
+
+.pokemon_info
+        @apply container pb-10
+        .container_poke
+                @apply flex gap-4 w-full justify-between
+                @apply grid-cols-2 text-black
+                @apply border border-slate-900 border-8 rounded-md
+                @apply bg-slate-300
+                @apply p-10
+                @media screen and (max-width: 1020px)
+                        @apply flex-col-reverse 
+                .container_info
+                        @apply flex flex-col gap-8
+                        @apply w-auto
+                        @apply font-black
+                        .line
+                                @apply w-10 h-2 bg-primary
+                                @apply absolute
+                        .poke_info_datos
+                                @apply flex flex-col
+                                @apply text-lg 
+                                @apply bg-slate-400 bg-opacity-30
+                                @apply w-auto h-auto p-4 text-gray-800 object-contain
+                        .poke_varios
+                                @apply grid grid-cols-3 gap-4 text-gray-800
+                                @apply text-base p-4
+                                .poke_info_abilities
+                                        div:first-child
+                                                @apply text-primary font-roboto_black uppercase text-lg
+                                .poke_info_stats
+                                        div:first-child
+                                                @apply text-green-800 font-roboto_black uppercase text-lg
+                                .poke_info_moves
+                                        div:first-child
+                                                @apply text-purple-900 font-roboto_black uppercase text-lg
+        
+        
+                .poke_info_picture
+                        @apply flex items-start justify-end relative
+                        img
+                                @apply w-auto h-auto
+                                @apply object-cover
+                                @apply z-40
+                        .poke_number
+                                @apply text-slate-400 font-roboto_black text-[6rem] text-right
+                                @apply leading-[10rem]
+                                @apply absolute z-20
+                        .img_container
+                                @apply w-[25em] h-[25em] absolute z-10 top-1/2 left-1/2
+                                @apply border-primary border-[20px] rounded-full transform -translate-x-1/2 -translate-y-1/2
+                                @media screen and (max-width: 800px)
+                                        @apply w-[25em] h-[25em]
+                        .img_container_2
+                                @apply w-[12em] h-[12em] absolute z-10 top-1/2 left-1/2
+                                @apply border-primary border-[20px] rounded-full transform -translate-x-1/2 -translate-y-1/2
+                                @media screen and (max-width: 800px)
+                                        @apply w-[12em] h-[12em]
+
+.pokemon_error
+        @apply container
+        .pokemon_error_container
+                @apply display flex justify-center
+                @apply flex gap-4 w-full
+                @apply grid-cols-3 text-black
+                @apply border border-slate-900 border-8 rounded-md
+                @apply bg-slate-300
+                @apply p-10

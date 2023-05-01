@@ -1,0 +1,40 @@
+
+
+.pokemon_ask
+    @apply flex justify-between items-center
+    @apply container 
+    @apply py-4 px-12 bg-slate-900
+    @apply rounded-lg
+    @media screen and (max-width: 800px)
+        @apply px-4
+    .container_pokeapi
+        @apply flex items-center gap-10
+        img
+            @apply w-[50%] h-[50%]
+            @media screen and (max-width: 1020px)
+                @apply w-[90%] h-[90%]
+    form
+        @apply flex gap-4 justify-center
+        .form_control
+            @apply flex flex-col gap-4
+            @apply bg-transparent
+            input
+                @apply input w-72
+                @apply rounded-lg
+        .form_control_buttons
+            @apply flex gap-4
+            @apply bg-transparent
+            button
+                @apply btn btn-primary
+                @apply text-white
+                @apply rounded-lg
+
+
+.loading
+    @apply fixed top-0 left-0 w-full h-full
+    @apply flex justify-center items-center
+    @apply bg-slate-500 bg-opacity-75 
+    @apply text-white
+    @apply hidden
+    &.opened
+        @apply flex

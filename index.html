@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke-api</title>
+    <link rel="shortcut icon" href="assets/images/pokeapi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div class="app">
+      
+      <div class="pokemon_ask">
+        <h1 class="container_pokeapi">
+          <img src="assets/images/pokeapi.png" alt="Logo poke-api" class="img_pokeapi">
+        </h1>
+        
+        <form>
+          <div class="form_control">
+            <input type="text" name="pokemon" placeholder="Buscar pokemon...">
+          </div>
+          <div class="form_control_buttons">
+            <button type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+        <!-- <div class="container_filter"> NO me va :(
+          <h2>Filtra por tipo:</h2>
+          <div class="container_categories">
+            <div class="tipo normal">normal</div>
+            <div class="tipo grass">grass</div>
+            <div class="tipo fire">fire</div>
+            <div class="tipo water">water</div>
+            <div class="tipo bug">bug</div>
+            <div class="tipo electric">electric</div>
+            <div class="tipo rock">rock</div>
+            <div class="tipo ghost">ghost</div>
+            <div class="tipo poison">poison</div>
+            <div class="tipo psychic">psychic</div>
+            <div class="tipo fighting">fighting</div>
+            <div class="tipo ground">ground</div>
+            <div class="tipo dragon">dragon</div>
+            <div class="tipo reset">reset</div>
+          </div>
+        </div> -->
+        
+      <div class="pokemon_error">
+          <!-- pintado dinámico de error de búsqueda -->
+      </div>
+        
+      <div class="pokemon_info">
+          <!-- pintado dinámico de card pokemon -->
+      </div>
+
+      
+
+      <div class="loading">
+          <p>Loading...</p>
+      </div>
+
+    </div>
+    <!-- Script -->
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

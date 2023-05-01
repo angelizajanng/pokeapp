@@ -1,0 +1,39 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@import lib/fontface.scss
+
+@import partials/filter.sass
+@import partials/form.sass
+@import partials/pokemon-info.sass
+
+*
+    @apply scroll-smooth
+    @apply font-roboto
+
+body
+    @apply pt-10 w-auto
+    @apply m-0 min-h-screen max-h-full bg-slate-200
+    @media screen and (max-width: 800px)
+        @apply px-2
+
+h1
+    @apply font-roboto_black text-4xl text-primary
+
+h2
+    @apply text-xl font-bold
+    @apply pb-8
+
+h3
+    @apply text-[6em] leading-[1em]
+    @apply font-black uppercase text-white font-roboto_black
+    @apply pb-4
+    @media screen and (max-width: 1280px)
+        @apply text-[3em]
+
+h4
+    @apply text-lg font-bold leading-6
+
+.app
+    @apply flex flex-col gap-8 items-center 
